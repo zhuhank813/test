@@ -1,7 +1,21 @@
-# test
+# Football decision lab
 
-這是我的第一個 GitHub 測試倉庫。
+A reproducible, synthetic American football fourth-down analysis in Python.
+All data and possession values are simulated; no real NFL data or calibrated EPA.
 
-## Hello, GitHub!
+## Run
 
-用這個專案練習新增檔案、儲存修改與管理程式碼。
+Python 3.10+; no external dependencies:
+
+```bash
+python analysis.py
+```
+
+Read [the Chinese report](REPORT.md), or download and open `report.html` for a self-contained offline version.
+
+- `synthetic_plays.csv`: 12,000 generated fourth-down situations.
+- `analysis.py`: data generation, analysis, checks and SVG/HTML authoring.
+- `summary.json`: machine-readable findings.
+- Three SVG charts: decision map, downside risk, and conversion luck.
+
+The simulation is an educational experiment, not an NFL tactical recommendation.
